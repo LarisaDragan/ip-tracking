@@ -17,8 +17,6 @@ Challenge project by Frontend Mentor.
 
 ## Screenshots
 
-## Solution
-
 ## Instalation
 
 1. Install dependencies:
