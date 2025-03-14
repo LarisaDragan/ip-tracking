@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # trigger on each push on the main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest # github actions runs on ubuntu
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+        env:
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }} # the API key from the GitHubsecret
+
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
