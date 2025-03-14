@@ -13,9 +13,13 @@ Challenge project by Frontend Mentor.
 - TypeScript
 - CSS
 - API tracking [IP Geolocation API by IPify](https://geo.ipify.org/)
-- map [LeafletJS](https://leafletjs.com/).
+- Display the map [LeafletJS](https://leafletjs.com/)
 
 ## Screenshots
+![ip_desktop](https://github.com/user-attachments/assets/d158ccf7-6bd4-4de2-8bdd-5f4047d2835f)
+
+![ip_mobile](https://github.com/user-attachments/assets/4db4ee55-eaa5-4164-a7d8-92b0b347ae2c)
+
 
 ## Instalation
 
