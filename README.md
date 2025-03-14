@@ -1,19 +1,27 @@
 # IP address tracker
 
-This is a responsive React project that allows users to search an IP or DOMAIN and track the info about it.
+The IP Address Tracker is a web app that allows users to search for IP addresses or domain names to retrieve geographic and network information. It provides details such as the IP address, location, timezone and ISP, along with a map displaying the location.
+
 Challenge project by Frontend Mentor.
 
 ## Features
 
-- Search an IP or Domain and display informations about it like: ip address, location, timezone and isp (internal service provider)
+- Allow users to track their own public IP automatically
+- Search for an IP address or domain name
+- Displays key information including:
+   - IP Address
+   - Location (city)
+   - Timezone
+   - ISP (Internet Service Provider)
+- Interactive map visualization of the IP location
 
 ## Technologies Used
 
 - React
 - TypeScript
 - CSS
-- API tracking [IP Geolocation API by IPify](https://geo.ipify.org/)
-- Display the map [LeafletJS](https://leafletjs.com/)
+- IP Geolocation API: [IP Geolocation API by IPify](https://geo.ipify.org/)
+- Displaying the IP location on the map: [React-Leaflet](https://leafletjs.com/)
 
 ## Screenshots
 ![ip_desktop](https://github.com/user-attachments/assets/d158ccf7-6bd4-4de2-8bdd-5f4047d2835f)
@@ -29,7 +37,12 @@ Challenge project by Frontend Mentor.
    npm install
    ```
 
-2. Start the development server:
+2. Create a .env file in the root directory and add your API key::
+   ```sh
+   API_KEY=your_api_key_here
+   ```
+
+3. Start the development server:
    ```sh
    npm run dev
    ```
