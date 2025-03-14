@@ -3,9 +3,10 @@ import IpTrackerComponent from "./components/IpTrackerComponent";
 import MapComponent from "./components/MapComponent";
 import "./App.css";
 
+const baseURL = import.meta.env.VITE_BASE_URL || "/";
+
 function App() {
   const [ipData, setIpData] = useState();
-  console.log("sunt aici");
 
   return (
     <>
@@ -15,7 +16,7 @@ function App() {
 
       <div id="background-image">
         <img
-          src="./images/pattern-bg-desktop.png"
+          src={`${baseURL}${"./images/pattern-bg-desktop.png"}`}
           alt="background-image"
           id="image"
         />
