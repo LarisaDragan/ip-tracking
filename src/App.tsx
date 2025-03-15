@@ -1,6 +1,6 @@
 import { useState } from "react";
-import IpTrackerComponent from "./components/IpTrackerComponent";
-import MapComponent from "./components/MapComponent";
+import IpTrackerComponent from "./components/IpTrackerComponent/IpTrackerComponent";
+import MapComponent from "./components/MapComponent/MapComponent";
 import "./App.css";
 
 const baseURL = import.meta.env.VITE_BASE_URL || "/";
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div id="container">
+      <div id="ip-track-container">
         <IpTrackerComponent setIpData={setIpData} />
       </div>
 

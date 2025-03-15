@@ -10,7 +10,7 @@ interface apiParams {
 
 const getIpData = async (ipParam?: string) => {
   const apiParams: apiParams = {
-    apiKey,
+    apiKey: "at_mT06srHp0UL7DdmFXEbpfUp6bW8y2",
   };
 
   if (ipParam) {
